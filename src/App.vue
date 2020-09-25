@@ -1,28 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HeaderComponent></HeaderComponent>
+
+    <router-view></router-view>
+
+    <!-- Limpiar los float -->
+    <div class="clearfix"></div>
+    <FooterComponent></FooterComponent>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// Componentes comunes
+import HeaderComponent from './components/shared/header/HeaderComponent.vue';
+import FooterComponent from './components/shared/footer/FooterComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderComponent,
+    FooterComponent
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+/* Estilos */
+@import './assets/css/App.css';
+@import './assets/css/responsive.css';
 </style>
