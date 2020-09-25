@@ -1,23 +1,12 @@
-.DS_Store
+# dependences
 node_modules
-/dist
 
+# testing
+coverage
 
-# local env files
-.env.local
-.env.*.local
+# procution
+dist
 
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-# Editor directories and files
-.idea
+# editor directories and files
 .vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+
