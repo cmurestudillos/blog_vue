@@ -1,16 +1,21 @@
 <div class="general">
     <div class="center">
       <section id="content">
-          <router-link :to="'/home'" class="btn btn-volver">Volver</router-link>           
           <article class="article-item detail" v-if="articulo">
               <div class="image-wrap" v-if="articulo.imagen" >
                   <img :src="articulo.imagen" :alt="articulo.titulo" :title="articulo.titulo" />
               </div>
+              <div class="image-wrap" v-if="!articulo.imagen" >
+                <img src="../../assets/images/noimage.png" :alt="articulo.titulo" :title="articulo.titulo"  />
+            </div>              
+              <p class="right">
+                <router-link :to="'/home'" class="btn btn-success">Volver</router-link>
+             </p>
               <h1 class="sub-header">{{articulo.titulo}}</h1>
               <span class="date">{{articulo.fecha | moment("from", "now")}}</span>
               <p>{{articulo.contenido}}</p>
-              <router-link :to="'/editar-articulo/' + articulo.id" class="btn btn-warning">Editar</router-link>           
-              <a @click="eliminarArticulo(articulo.id)" class="btn btn-danger">Eliminar</a>                
+              <router-link :to="'/editar/' + articuloId" class="btn btn-warning">Editar</router-link>           
+              <a @click="eliminarArticulo()" class="btn btn-danger">Eliminar</a>   
               <!-- Limpiar los float -->
               <div class="clearfix"></div>
           </article> 

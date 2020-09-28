@@ -38,7 +38,7 @@ export default {
             });
         },
         // Metodo para eliminar un articulo
-        eliminarArticulo(articuloId){
+        eliminarArticulo(){
             // Log de seguimiento
             console.log("ArticuloComponent.vue - Metodo eliminarArticulo");
 
@@ -52,7 +52,8 @@ export default {
                 })
                 .then((willDelete) => {
                 if (willDelete) {
-                    axios.delete(this.url + '/articulos/' + articuloId + '.json')
+                    this.articuloId = this.$route.params.id; 
+                    axios.delete(this.url + '/articulos/' + this.articuloId + '.json')
                     .then(res => {
                         this.articulo = res.data;
                         // Redireccionamos al articulo editado

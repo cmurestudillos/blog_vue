@@ -1,0 +1,26 @@
+<div class="general">
+    <div class="center">
+      <section id="content">
+          <h2 class="sub-header">Crear Articulo</h2>
+          <form class="middle-form" @submit.prevent="guardarArticulo"> 
+              <div class="form-group">
+                  <label for="titulo">Titulo</label>
+                  <input type="text" name="titulo" v-model="articulo.titulo" required />
+                  <div v-if="submitted && !$v.articulo.titulo.required">Campo obligatorio.</div>
+              </div>
+
+              <div class="form-group">
+                  <label for="contenido">Contenido</label>
+                  <textarea name="contenido" v-model="articulo.contenido" required></textarea>
+                  <div v-if="submitted && !$v.articulo.titulo.required">Campo obligatorio.</div>
+              </div>
+
+              <!--Limpiar los float -->
+              <div class="clearfix"></div>
+
+              <input type="submit" value="Guardar" class="btn btn-success" />
+          </form>
+      </section>
+    </div>
+    <SidebarComponent></SidebarComponent>
+</div>
