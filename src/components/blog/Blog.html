@@ -1,0 +1,13 @@
+<div class="general">
+    <SliderComponent texto="Blog"></SliderComponent>
+    <div class="center">
+      <section id="content">
+          <h2 class="sub-header">Blog</h2>
+            <!-- Listado de articulos -->
+            <div id="articles" v-if="articulos">
+              <ArticulosComponent :articulos="articulos"></ArticulosComponent>
+            </div>          
+      </section>
+    </div>
+    <SidebarComponent></SidebarComponent>
+</div>

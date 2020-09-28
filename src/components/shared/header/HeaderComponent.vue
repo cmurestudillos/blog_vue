@@ -1,7 +1,5 @@
+<!-- Vista HTML -->
 <template src="./Header.html"></template>
 
-<script>
-export default {
-  name: 'HeaderComponent'
-}
-</script>
+<!-- Funcionalidad JS -->
+<script src="./Header.js"></script>

@@ -1,0 +1,13 @@
+.btn-volver{
+    margin: 10px;
+    float: right;
+    width: 25%;
+    background: green;
+    color: white !important;
+}
+
+.btn-volver:hover {
+    background: white;
+    color: green !important;
+    border: 1px solid green;
+  }

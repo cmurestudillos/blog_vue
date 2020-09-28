@@ -7,10 +7,11 @@ import ArticuloModel from '../../models/ArticuloModel';
 // Componentes comunes
 import SliderComponent from '../shared/slider/SliderComponent';
 import SidebarComponent from '../shared/sidebar/SidebarComponent';
+// Componentes
 import ArticulosComponent from '../articulos/ArticulosComponent';
 
 export default {
-  name: 'HomeComponent',
+  name: 'BlogComponent',
   components: {
         SliderComponent,
         SidebarComponent,
@@ -18,7 +19,7 @@ export default {
   },
   mounted(){
     // Llamamos al metodo
-    this.getUltimosArticulos();
+    this.getArticulos();
   },
   data(){
     return {
@@ -27,15 +28,15 @@ export default {
     }
   },
   methods: {
-    // Metodo para obtener los ultimos articulos
-    getUltimosArticulos(){
+    // Metodo para obtener los articulos
+    getArticulos(){
       // Log de seguimiento
-      console.log('HomeComponent.vue - Metodo getUltimosArticulos');
+      console.log('BlogComponent.vue - Metodo getArticulos');
 
       axios.get(this.url + '/articulos.json')
       .then( res => {
         if(res.data){
-           this.articulos = this.ordenarArray(res.data);
+            this.articulos = this.ordenarArray(res.data);
         }
       });
     },
@@ -50,14 +51,12 @@ export default {
         Object.keys(articulosArray).reverse().forEach( key => {
             var articulo = ArticuloModel; 
             articulo = articulosArray[key];
-            if(articulosData.length <= 4){
-                articulo.id = key;
-                // Devolvemos en el Array el objeto extraido
-                articulosData.push(articulo);
-            }
+            articulo.id = key;
+            // Devolvemos en el Array el objeto extraido
+            articulosData.push(articulo);
         });
 
         return articulosData;
-    }    
+    }     
   }
 }

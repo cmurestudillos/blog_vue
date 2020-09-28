@@ -17,6 +17,9 @@ const VueFire = require('vuefire');
 
 // Componentes
 import HomeComponent from './components/home/HomeComponent.vue';
+import BlogComponent from './components/blog/BlogComponent.vue';
+import ArticuloComponent from './components/articulo/ArticuloComponent.vue';
+
 import Error404Component from './components/shared/Error404/Error404Component.vue';
 
 // ---------------------------------------------------------------//
@@ -44,8 +47,8 @@ const routes = [
   {path: '/', component: HomeComponent},
   {path: '/home', component: HomeComponent},
   {path: '/ultimos-articulos', component: HomeComponent},
-  //{path: '/blog', component: BlogComponent},
-  //{path: '/articulo/:id', name: 'articulo', component: ArticuloComponent},
+  {path: '/blog', component: BlogComponent},
+  {path: '/articulo/:id', name: 'articulo', component: ArticuloComponent},
   //{path: '/crear-articulo', name: 'creararticulo', component: CrearArticuloComponent},
   //{path: '/editar-articulo/:id', name: 'editararticulo', component: EditarArticuloComponent},
   //{path: '/buscador/:stringBusqueda', component: BuscadorComponent},

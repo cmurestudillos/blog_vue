@@ -1,7 +1,5 @@
+<!-- Vista HTML -->
 <template src="./Error404.html"></template>
 
-<script>
-export default {
-  name: 'Error404Component'
-}
-</script>
+<!-- Funcionalidad JS -->
+<script src="./Error404.js"></script>
