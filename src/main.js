@@ -12,6 +12,9 @@ import VueMoment from 'vue-moment';
 const moment = require('moment')
 require('moment/locale/es')
 
+// BBDD y configuracion
+const VueFire = require('vuefire');
+
 // Componentes
 import HomeComponent from './components/home/HomeComponent.vue';
 import Error404Component from './components/shared/Error404/Error404Component.vue';
@@ -32,10 +35,22 @@ Vue.use(Vuelidate);
 // Configuracion para fechas                                      //
 // ---------------------------------------------------------------//
 Vue.use(VueMoment, {moment});
+// ---------------------------------------------------------------//
+// Configuracion para usar Firebase en Vue.js                     //
+// ---------------------------------------------------------------//
+Vue.use(VueFire);
 
 const routes = [
   {path: '/', component: HomeComponent},
   {path: '/home', component: HomeComponent},
+  {path: '/ultimos-articulos', component: HomeComponent},
+  //{path: '/blog', component: BlogComponent},
+  //{path: '/articulo/:id', name: 'articulo', component: ArticuloComponent},
+  //{path: '/crear-articulo', name: 'creararticulo', component: CrearArticuloComponent},
+  //{path: '/editar-articulo/:id', name: 'editararticulo', component: EditarArticuloComponent},
+  //{path: '/buscador/:stringBusqueda', component: BuscadorComponent},
+  //{path: '/redirect/:stringBusqueda', component: RedirectComponent},
+  //{path: '/formulario', component: FormularioComponent},
   {path: '*', component: Error404Component}
 ];
 

@@ -1,0 +1,14 @@
+<aside id="sidebar">
+    <div id="nav-blog" class="sidebar-item">
+        <h3>Puedes hacer esto</h3>
+        <router-link to="/crear-articulo" class="btn btn-success">Crear Articulo</router-link>
+    </div>
+    <div id="search-blog" class="sidebar-item">
+        <h3>Buscador</h3>
+        <p>Encuentra el articulo que buscas</p>
+        <form @submit.prevent="buscarTexto">
+            <input type="text" nombre="search" v-model="stringBusqueda">
+            <input class="btn btn-success" type="submit" nombre="enviar" value="Buscar">
+        </form>
+    </div>
+</aside>

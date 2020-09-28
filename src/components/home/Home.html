@@ -5,7 +5,9 @@
             <h2 class="sub-header">Ultimos articulos</h2>
             <!-- Listado de articulos -->
             <div id="articles" v-if="articulos">
+                <ArticulosComponent :articulos="articulos"></ArticulosComponent>
             </div>
         </section>
+        <SidebarComponent></SidebarComponent>
     </div>
 </div>

@@ -1,0 +1,28 @@
+<section id="articulos-component">
+    <div id="articulos-list" v-if="articulos">
+        <article class="article-item" v-for="articulo in articulos" :key="articulo.id">
+            <div class="image-wrap" v-if="articulo.imagen">
+                <img :src="articulo.imagen" :alt="articulo.titulo" :title="articulo.titulo"  />
+            </div>
+            <div class="image-wrap" v-if="!articulo.imagen">
+                <img src="../../assets/images/noimage.png" :alt="articulo.titulo" :title="articulo.titulo"  />
+            </div>                
+            <h2>
+                <router-link :to="{name: 'articulo', params: {id: articulo.id} }">{{articulo.titulo}}</router-link>
+            </h2>
+            <span class="date">{{articulo.fecha | moment("from", "now")}}</span>
+            <router-link :to="{name: 'articulo', params: {id: articulo.id} }">Leer mas ...</router-link>
+            <!-- Limpiar los float -->
+            <div class="clearfix"></div>
+        </article> 
+    </div>
+
+    <div v-else-if="articulos.length <= 1">
+        No hay articulos para mostrar.
+    </div>
+
+    <div v-else>
+        Cargando ...
+    </div>
+
+</section>
