@@ -6,7 +6,7 @@
     <div id="search-blog" class="sidebar-item">
         <h3>Buscador</h3>
         <p>Encuentra el articulo que buscas</p>
-        <form @submit.prevent="buscarTexto">
+        <form @submit.prevent="buscarArticulos">
             <input type="text" nombre="search" v-model="stringBusqueda">
             <input class="btn btn-success" type="submit" nombre="enviar" value="Buscar">
         </form>

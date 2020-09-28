@@ -1,16 +1,12 @@
 <div class="general">
     <SliderComponent :texto="'Busqueda: ' + stringBusqueda"></SliderComponent>
     <div class="center">
-      <section id="content">
+      <section id="content"> 
           <h2 class="sub-header" v-if="articulos">Articulos encontrados</h2>
-          <h2 class="sub-header" v-else>Sin resultados</h2>
-            <!-- Listado de articulos -->
-            <div id="articles" v-if="articulos">
-              <ArticulosComponent :articulos="articulos"></ArticulosComponent>
-            </div> 
-            <div id="articles" v-else>
-                <h2>No hay articulos para mostrar</h2>
-            </div>
+          <!-- Listado de articulos -->
+          <div id="articles">
+            <ArticulosComponent :articulos="articulos"></ArticulosComponent>
+          </div> 
       </section>
     </div>
     <SidebarComponent></SidebarComponent>

@@ -7,7 +7,7 @@ export default {
     },
     methods: {
         // Metodo para buscar articulos desde el buscador
-        buscarTexto(){
+        buscarArticulos(){
             this.$router.push('/redirect/' + this.stringBusqueda);
         }
     }

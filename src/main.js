@@ -19,7 +19,8 @@ const VueFire = require('vuefire');
 import HomeComponent from './components/home/HomeComponent.vue';
 import BlogComponent from './components/blog/BlogComponent.vue';
 import ArticuloComponent from './components/articulo/ArticuloComponent.vue';
-
+import BuscadorComponent from './components/buscador/BuscadorComponent.vue';
+import RedirectComponent from './components/buscador/redirect/RedirectComponent.vue';
 import Error404Component from './components/shared/Error404/Error404Component.vue';
 
 // ---------------------------------------------------------------//
@@ -51,8 +52,8 @@ const routes = [
   {path: '/articulo/:id', name: 'articulo', component: ArticuloComponent},
   //{path: '/crear-articulo', name: 'creararticulo', component: CrearArticuloComponent},
   //{path: '/editar-articulo/:id', name: 'editararticulo', component: EditarArticuloComponent},
-  //{path: '/buscador/:stringBusqueda', component: BuscadorComponent},
-  //{path: '/redirect/:stringBusqueda', component: RedirectComponent},
+  {path: '/buscador/:stringBusqueda', component: BuscadorComponent},
+  {path: '/redirect/:stringBusqueda', component: RedirectComponent},
   //{path: '/formulario', component: FormularioComponent},
   {path: '*', component: Error404Component}
 ];
