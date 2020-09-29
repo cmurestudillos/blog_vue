@@ -2,4 +2,8 @@
 <template src="./Error404.html"></template>
 
 <!-- Funcionalidad JS -->
-<script src="./Error404.js"></script>
+<script>
+export default {
+    name: 'Error404Component'
+}
+</script>

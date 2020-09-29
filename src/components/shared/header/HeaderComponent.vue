@@ -2,4 +2,8 @@
 <template src="./Header.html"></template>
 
 <!-- Funcionalidad JS -->
-<script src="./Header.js"></script>
+<script>
+export default {
+    name: 'HeaderComponent'
+}
+</script>

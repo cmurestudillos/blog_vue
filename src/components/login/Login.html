@@ -1,0 +1,24 @@
+<div class="general">
+    <!-- Slider -->
+    <SliderComponent texto="Login"></SliderComponent>
+    <div class="center">
+        <!-- Contenido -->
+        <section id="content">
+            <h2 class="sub-header">Acceso al Panel de Control</h2>
+            <form class="middle-form" @submit.prevent="logIn">
+                <div class="form-group">
+                    <label for="email">Correo electronico</label>
+                    <input type="text" id="email" placeholder="Correo electronico" v-model="email" />
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input id="password" type="password" placeholder="Introduce el Password" v-model="password" />
+                </div>
+                <!-- Limpiar los float -->
+                <div class="clearfix"></div>
+                <input type="submit" value="Conectar" class="btn btn-form">
+            </form>
+        </section>
+    </div>
+</div>

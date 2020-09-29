@@ -2,4 +2,9 @@
 <template src="./Slider.html"></template>
 
 <!-- Funcionalidad JS -->
-<script src="./Slider.js"></script>
+<script>
+export default {
+    name: 'SliderComponent',
+    props: ['texto', 'home']
+}
+</script>

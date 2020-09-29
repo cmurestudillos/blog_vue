@@ -275,7 +275,39 @@ body {
     color: #444;
     border: 1px solid #444;
   }
+
+  .btn-logout {
+    background: white;
+    color: red;
+    border: 1px solid red;
+    width: 75px;
+    height: 32px;
+    border-radius: 25px;
+    margin: 10px;
+  }
   
+  .btn-logout:hover {
+    background: red;
+    color: white;
+    border: 1px solid white;
+  }
+  
+  .btn-guardar {
+    background: white;
+    color: green;
+    border: 1px solid green;
+    width: 75px;
+    height: 32px;
+    border-radius: 25px;
+    margin: 10px;
+  }
+  
+  .btn-guardar:hover {
+    background: green;
+    color: white;
+    border: 1px solid white;
+  }
+
   .middle-form {
     width: 50%;
     margin: 0px auto;
