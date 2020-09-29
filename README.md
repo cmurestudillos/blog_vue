@@ -13,5 +13,5 @@ Ejecutar en terminal el comando `npm run serve` e introducir en el navegador `ht
 
 ### Hay que crear los Archivos de configurcion de firebase
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Para mas configuraciones
+Ver [Configuration](https://cli.vuejs.org/config/).
