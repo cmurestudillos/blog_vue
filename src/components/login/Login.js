@@ -15,8 +15,8 @@ export default {
     },
     data() {
         return {
-        email: '',
-        password: ''
+            email: '',
+            password: ''
         }
     },
     methods: {
