@@ -8,6 +8,8 @@ coverage
 dist
 
 # editor directories and files
-.firebase.js
 .vscode
+
+# configuracion
+/.firebase
 
