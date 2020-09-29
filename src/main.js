@@ -11,7 +11,7 @@ require('moment/locale/es')
 // BBDD y configuracion
 const VueFire = require('vuefire');
 // Configuracion BBDD - EndPoint
-import "@/firebase.js";
+import "./config/firebase.js";
 // Iconos
 require('./plugins/fontawesome');
 
