@@ -1,15 +1,16 @@
-# dependences
+# Build/Dependencies
 node_modules
+dist
 
 # testing
 coverage
 
-# production
-dist
+# OS Specific Files
+.DS_Store
 
 # editor directories and files
 .vscode
 
 # configuracion
-/.firebase
+**/firebase.js
 
