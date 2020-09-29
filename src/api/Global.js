@@ -2,7 +2,7 @@
 // Configuracion global de nuestra aplicacion                           //
 //----------------------------------------------------------------------//
 var Global = {
-    url: 'XXXXXXXXX'
+    url: 'https://blogframeworks.firebaseio.com'
 };
 
 export default Global;
