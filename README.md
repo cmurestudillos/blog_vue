@@ -15,3 +15,4 @@ Ejecutar en terminal el comando `npm run serve` e introducir en el navegador `ht
 
 ### Para mas configuraciones
 Ver [Configuration](https://cli.vuejs.org/config/).
+
