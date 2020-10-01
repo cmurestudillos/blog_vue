@@ -13,3 +13,4 @@ coverage
 
 # configuracion
 .env
+url.js
