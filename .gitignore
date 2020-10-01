@@ -11,7 +11,5 @@ coverage
 # editor directories and files
 .vscode
 
-# web
-config/firebase.js
-src/api/Global.js
-
+# configuracion
+.env
