@@ -14,3 +14,4 @@ coverage
 # configuracion
 .env
 url.js
+key.js
